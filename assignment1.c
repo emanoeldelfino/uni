@@ -7,23 +7,26 @@ bool is_leap_year(int year) {
     return ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0);
 }
 
-int readInt(char *msg, char *data, int min, int max) {
+int readInt(char *msg, char *data, int min, int max, bool zero_exit) {
     int input;
-    printf(msg);
-    scanf("%d", &input);
 
-    if (input < min || input > max) {
-        printf("\nInvalid %s.\n\n", data);
-        exit(1);
-    }
+    do {
+        printf("%s%s: ", msg, zero_exit ? " (0 to exit)": "");
+        scanf("%d", &input);
+        if (zero_exit && input == 0) exit(1);
+    
+        if (input < min || input > max) {
+            printf("\nInvalid %s.\n", data);
+        }
+    } while (input < min || input > max);
 
     return input;
 }
 
 int main(int argc, char *argv[]) {
-    int day = readInt("\nDay: ", "day", 1, 31);
-    int month = readInt("Month: ", "month", 1, 12);
-    int year = readInt("Year: ", "year", 1800, 2199);
+    int day = readInt("\nDay", "day", 1, 31, true);
+    int month = readInt("Month", "month", 1, 12, true);
+    int year = readInt("Year", "year", 1800, 2199, true);
 
     int last2DigitsYear = year % 100;
 
