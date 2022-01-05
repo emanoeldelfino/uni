@@ -10,7 +10,8 @@ int main(int argc, char *argv[]) {
     printf("Upper limit: ");
     scanf("%i", &up_limit);
 
-    for (int num = in_limit; num <= up_limit; num++) {
+    int num;
+    for (num = in_limit; num <= up_limit; num++) {
         int divisors = 0, is_prime = 1;
 
         float r = sqrt(num);
