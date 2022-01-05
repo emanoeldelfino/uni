@@ -1,32 +1,54 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-    int pA, pB;
-    float grA, grB;
+    int pop1 = 0, pop2 = 0;
+    float rate1 = 0, rate2 = 0;
+    int popA, popB;
+    float rateA, rateB;
 
-    printf("\nEnter city A population and its growth rate: ");
-    scanf("%d %f", &pA, &grA);
+    char city1, city2;
 
     do {
+        printf("\nEnter city A population and its growth rate: ");
+        scanf("%d %f", &popA, &rateA);
+
         printf("\nEnter city B population and its growth rate: ");
-        scanf("%d %f", &pB, &grB);
+        scanf("%d %f", &popB, &rateB);
 
-        if (pB <= pA) 
-            printf("\nInvalid population %d. It should be larger than city A %f.", pB, pA);
-        if (grB >= grA) 
-            printf("\nInvalid growth rate %d. It should be less than the city A %f.", grB, grA);
-    } while (pB <= pA || grB >= grA);
+        if (popA < popB && rateA > rateB) {
+            pop1 = popA;
+            pop2 = popB;
+            rate1 = rateA;
+            rate2 = rateB;
+            city1 = 'A';
+            city2 = 'B';
+        } else if (popA > popB && rateA < rateB) {
+            pop1 = popB;
+            pop2 = popA;
+            rate1 = rateB;
+            rate2 = rateA;
+            city1 = 'B';
+            city2 = 'A';
+        }
 
-    int cpA = pA, cpB = pB;
-    int y = 0;
-    while (cpA < cpB) {
-        cpA += cpA * (grA / 100);
-        cpB += cpB * (grB / 100);
-        y++;
+        if (rate1 == 0) {
+            printf("\nPopulation and growth rates must be different.");
+            printf("\nIf population of A is less than B, growth");
+            printf("rate of A must be greater than B.");
+            printf("\nOtherwise if population of A is greater than B, growth");
+            printf("rate of A must be less than B.");
+        }
+    } while (rate1 == 0);
+
+    int pop1c = pop1, pop2c = pop2;
+    int y;
+    for (y = 0; pop1c < pop2c; y++) {
+        pop1c += pop1c * (rate1 / 100);
+        pop2c += pop2c * (rate2 / 100);
     }
 
-    printf("\nIt'll take %d years for city A surpass city B population.", y);
-    printf("\n\nCity A will go from %d population to %d.", pA, cpA);
-    printf("\nCity B will go from %d population to %d.\n\n", pB, cpB);
+    printf("\nIt'll take %d years for city %c surpass city %c population.", y, city1, city2);
+    printf("\n\nCity %c will go from %d population to %d.", city1, pop1, pop1c);
+    printf("\nCity %c will go from %d population to %d.\n\n", city2, pop2, pop2c);
 }
 
