@@ -24,4 +24,6 @@ int main(int argc, char *argv[]) {
     } else {
         printf("Invalid number of digits for bar code %i.", bar_code);
     }
+
+    return 0;
 }

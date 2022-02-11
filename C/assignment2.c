@@ -38,5 +38,7 @@ int main(int argc, char *argv[]) {
             scanf(" %c", &repeat);
         } while (repeat != 'Y' && repeat != 'y' && repeat != 'N' && repeat != 'n');
     } while (repeat == 'Y' || repeat == 'y');
+
+    return 0;
 }
 

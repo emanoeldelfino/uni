@@ -106,4 +106,6 @@ int main(int argc, char *argv[]) {
 
     printf("\nDay of the week for %02d/%02d/%d is %s.\n\n", day, month, year, 
                                                     week_day_str);
+
+    return 0;
 }
