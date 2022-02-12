@@ -2,7 +2,7 @@
 
 int main(int argc, char *argv[]) {
     int i, k;
-    float sum = 0;
+    double sum = 0;
 
     printf("\n");
     do {
@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
         printf("1 / %d %c ", i, i == k ? '=' :
                                  i % 2 ? '-' : '+');
     }
-    printf("%.2f\n\n", sum);
+    printf("\n%lf\n\n", sum);
 
 }
 
