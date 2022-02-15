@@ -42,9 +42,7 @@ char * simp(int n1, int n2) {
 }
 
 int main(int argc, char *argv[]) {
-    float x[MAX], y[MAX];
     float sum_x = 0, sum_y = 0, sum_xy = 0, sum_x_sqr = 0;
-    float sum_xy_v[MAX], sum_x_sqr_v[MAX];
     int num_points;
     
     printf("\n");
@@ -52,6 +50,9 @@ int main(int argc, char *argv[]) {
         printf("Number of coordinates (between 1 and %d): ", MAX); 
         scanf("%d", &num_points);
     } while (num_points < 1 || num_points > MAX);
+
+    float x[num_points], y[num_points];
+    float sum_xy_v[num_points], sum_x_sqr_v[num_points];
 
     int i;
     printf("\n");
@@ -101,6 +102,11 @@ int main(int argc, char *argv[]) {
     int str_sum_len = strlen(str_sum_xy) > strlen(str_sum_x_sqr) ?
                         strlen(str_sum_xy) : strlen(str_sum_x_sqr);
 
+    for (i = 0; i < num_points; i++) {
+        printf("\n%d. (%.1f, %.1f)", i + 1, x[i], y[i]);
+    }
+    printf("\n");
+
     printf("\nX = { %-*s }", str_xy_len, str_x);
     printf("\nY = { %-*s }", str_xy_len, str_y);
 
@@ -140,3 +146,4 @@ int main(int argc, char *argv[]) {
     printf("\n");
     return 0;
 }
+
