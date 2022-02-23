@@ -3,12 +3,13 @@
 int fib(int terms);
 
 int main(int argc, char *argv[]) {
-    int num;
-    do {
-        printf("\nEnter a term for Fibonacci (negative for stopping): ");
-        scanf("%d", &num);
-        printf("\nFibonacci(%d) = %d\n", num, fib(num));
-    } while (num >= 0);
+    int k, i;
+    printf("\nEnter number of terms for Fibonacci: ");
+    scanf("%d", &k);
+    printf("\nFibonacci(%d) = ", k);
+    for (i = 1; i <= k; i++) {
+        printf("%d ", fib(i));
+    }
     printf("\n");
 }
 
