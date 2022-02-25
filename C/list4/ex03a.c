@@ -5,6 +5,7 @@ int main(int argc, char *argv[]) {
     int terms;
     double sum = 0;
     int denominator = 1;
+    bool is_term_odd;
 
     printf("\n");
     do {
@@ -16,7 +17,7 @@ int main(int argc, char *argv[]) {
 
     int i;
     for (i = 0; i < terms; i++) {
-        bool is_term_odd = (i % 2); // 5 % 2 -> true, 2 % 2 -> false
+        is_term_odd = (i % 2); // 5 % 2 -> true, 2 % 2 -> false
         sum += ((double)4 / denominator) * (is_term_odd ? -1 : 1);
         printf("4 / %d %c ", denominator, i == terms - 1 ? '=' : 
                                              is_term_odd ? '+' : '-');

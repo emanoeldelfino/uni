@@ -3,8 +3,10 @@
 
 int main(int argc, char *argv[]) {
     int terms;
-    double sum = 0;
-    int denominator = 1;
+    double sum = 3;
+    double numerator = 4;
+    long den = 2;
+    bool is_term_odd;
 
     printf("\n");
     do {
@@ -12,16 +14,19 @@ int main(int argc, char *argv[]) {
         scanf("%d", &terms);
     } while (terms <= 0);
 
-    printf("π = ");
+    printf("π = 3 %c ", terms > 1 ? '+' : '=');
 
     int i;
-    for (i = 0; i < terms; i++) {
-        bool is_term_odd = (i % 2); // 5 % 2 -> true, 2 % 2 -> false
-        sum += ((double)4 / denominator) * (is_term_odd ? -1 : 1);
-        printf("4 / %d %c ", denominator, i == terms - 1 ? '=' : 
-                                             is_term_odd ? '+' : '-');
-        denominator += 2;
+    for (i = 1; i < terms; i++) {
+        is_term_odd = (i % 2);
+        printf(" (4 / (%ld x %ld x %ld)) %c ", 
+                den, den + 1, den + 2, i < terms - 1 ? 
+                                         is_term_odd ? '-' : '+'
+                                                     : '=');
+        sum += (numerator / (den * (den + 1) * (den + 2))) * 
+                (is_term_odd ? 1 : -1);
+        den += 2;
     }
-    printf(" %lf\n", sum);
+    printf("\n%.18lf\n", sum);
 }
 
