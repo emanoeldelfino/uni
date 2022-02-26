@@ -12,6 +12,6 @@ int main(int argc, char *argv[]) {
 }
 
 long fact(int num) {
-    return (num <= 0 ? 1 : (long)num * fact(num - 1));
+    return (num <= 1 ? 1 : (long)num * fact(num - 1));
 }
 
