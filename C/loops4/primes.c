@@ -2,13 +2,13 @@
 #include <math.h>
 
 int main(int argc, char *argv[]) {
-    int num, lo_limit, up_limit, primes;
+    long num, lo_limit, up_limit, primes = 0;
     
     printf("Lower limit: ");
-    scanf("%i", &lo_limit);
+    scanf("%li", &lo_limit);
 
     printf("Upper limit: ");
-    scanf("%i", &up_limit);
+    scanf("%li", &up_limit);
 
     for (num = lo_limit; num <= up_limit; num++) {
         int divisors = 0, is_prime = 1;
@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
 
         if (is_prime) {
            primes++;
-           printf("%i: %i\n", primes, num);
+           printf("%li: %li\n", primes, num);
         }
     }
 }
