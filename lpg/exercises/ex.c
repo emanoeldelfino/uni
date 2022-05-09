@@ -1,3 +1,10 @@
+/*
+Elaborar um programa em C que declare 4 variáveis de tipos diferentes e duas constantes. 
+utilize cada uma das sequências de escape \n, \t, \a, \\, \", além das 
+funções printf e scanf.
+Utilizar operadores aritméticos, <, >, % e uma fórmula com parênteses.
+*/
+
 #include <stdio.h>
 #include <math.h>
 
@@ -6,7 +13,7 @@
 
 int main() {
     char inp_str[7] = "\n\t\a\\> ";
-    char abc_chars[VARS] = "ABC";
+    char abc_chars[VARS] = "ABC"; 
     int abc_nums[VARS], a, b, c;
     float delta;
     double x1, x2;
@@ -35,5 +42,6 @@ int main() {
         x2 = (-b + sqrt(delta)) / (2 * a);
         printf("x' = %.2lf\nx\" = %.2lf", x1, x2);
     }
+    printf("\n\n");
 }
 
