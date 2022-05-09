@@ -7,33 +7,28 @@ n estar dentro do limite permitido.
 
 #include <stdio.h>
 
-#define MIN 0
-#define MAX 100
-
 int main(int argc, char *argv[]) {
-    int count, num;
+    int count, unique_count = 0, found;
+    float num;
 
     do {
         printf("Quantidade de numeros: ");
         scanf("%d", &count);
     } while (count <= 0);
 
-    int nums[count];
+    float nums_freq[count][2];
 
-    int i;
+    int i, j;
     for (i = 0; i < count; i++) {
-        do {
-            printf("Número %d (0 a 100): ", i + 1);
-            scanf("%d", &num);
-        } while (num < MIN || num > MAX);
+        printf("Número %d: ", i + 1);
+        scanf("%f", num);
 
-        nums[i] = num;
+        found = 0;
+        for (j = 0; j < unique_count; j++) {
+            if (
+        }
     }
 
-    printf("\n");
-    for (i = count - 1; i >= 0; i--) {
-        printf("%d ", nums[i]);
-    }
-    printf("\n");
+    printf("Num  Freq");
 }
 
