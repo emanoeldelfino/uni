@@ -1,5 +1,5 @@
 /*
-- Criar um programa onde o usuário digite a temperatura em Celsius e o programa mostre
+Criar um programa onde o usuário digite a temperatura em Celsius e o programa mostre
 a temperatura em Fahrenheit e Kelvin.
 
 Celsius a Fahrenheit -> °f = 9/5 (°C) + 32

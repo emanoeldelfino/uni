@@ -1,4 +1,4 @@
-/* - Crie um programa que calcule o comprimento de uma string utilizando ponteiros. */
+/* Crie um programa que calcule o comprimento de uma string utilizando ponteiros. */
 
 #include <stdio.h>
 

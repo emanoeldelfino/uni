@@ -1,5 +1,5 @@
 /*
-- Crie um programa que receba tres caractere do teclado e teste-o com cada uma das funções na biblioteca
+Crie um programa que receba tres caractere do teclado e teste-o com cada uma das funções na biblioteca
 de tratamento de caractere. O programa deverá imprimir o valor retornado por cada função.
 */
 

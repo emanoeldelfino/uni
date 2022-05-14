@@ -1,4 +1,4 @@
-/* - Crie um programa que adicione dois números com ponteiros utilizando chamada por referência. */
+/* Crie um programa que adicione dois números com ponteiros utilizando chamada por referência. */
 
 #include <stdio.h>
 
@@ -16,4 +16,7 @@ int main(int argc, char *argv[]) {
 	sumPtrs(n1Ptr, n2Ptr, sumPtr);
 	
 	printf("\nA soma de %d e %d eh %d.\n", *n1Ptr, *n2Ptr, sum);
+
+    return 0;
 }
+

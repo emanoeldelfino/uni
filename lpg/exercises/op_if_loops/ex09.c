@@ -31,5 +31,7 @@ int main() {
     }
 
     printf("%d", sum_even);
+
+    return 0;
 }
 

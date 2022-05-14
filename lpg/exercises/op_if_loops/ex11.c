@@ -17,5 +17,7 @@ int main(int argc, char *argv[]) {
         printf("%.*s%c\n", i, "$$$$$", i < 5 ? '*' : ' ');
     }
     printf("\n");
+
+    return 0;
 }
 

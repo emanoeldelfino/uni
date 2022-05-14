@@ -1,7 +1,10 @@
 /*
-- Criar um programa fazendo uso de programação modular (funções)
-onde o usuário digite a temperatura em Celsius e o programa mostre
-a temperatura em Fahrenheit e Kelvin.
+Criar um programa fazendo uso de programação modular (funções) onde o 
+usuário digite a temperatura em Celsius e o programa mostre a temperatura 
+em Fahrenheit e Kelvin.
+
+Celsius a Fahrenheit → °f = 9/5 (°c) + 32
+Celsius a Kelvin → k = ° c + 273
 */
 
 #include <stdio.h>
@@ -17,6 +20,7 @@ int main(int argc, char *argv[]) {
 
     printf("%.1f graus Celsius = %.1f graus Fahrenheit.\n", celsius, fahrenheit);
 
+    return 0;
 }
 
 float temp_convert(float celsius) {

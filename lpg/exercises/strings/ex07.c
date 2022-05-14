@@ -1,5 +1,5 @@
 /*
-- Crie um programa que receba várias linhas de texto e um caractere de pesquisa, e 
+Crie um programa que receba várias linhas de texto e um caractere de pesquisa, e 
 determine o total de ocorrências do caractere nas linhas de texto.
 */
 
@@ -24,6 +24,8 @@ int main(int argc, char *argv[]) {
     printf("\n");
 
     printf("\nO caracter %c aparece %d vez(es) no texto.\n", search, find_str(text, search));
+
+    return 0;
 }
 
 int find_str(char *str, char find) {

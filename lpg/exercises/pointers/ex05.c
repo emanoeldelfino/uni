@@ -1,4 +1,4 @@
-/* - Crie um programa que armazene e retorne os elementos de um array utilizando ponteiros. */
+/* Crie um programa que armazene e retorne os elementos de um array utilizando ponteiros. */
 
 #include <stdio.h>
 
@@ -34,3 +34,4 @@ int main(int argc, char *argv[]) {
 
 	return 0;
 }
+

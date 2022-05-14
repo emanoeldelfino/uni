@@ -1,3 +1,9 @@
+/*
+Criar um programa que a partir do array que contém ["azul", "amarelho", 
+"vermelho", "verde", "marrão", "rosa"] verifique se uma cor digitada pelo 
+usuário está ou não no array.
+*/
+
 #include <stdio.h>
 #include <string.h>
 
@@ -25,5 +31,7 @@ int main(int argc, char *argv[]) {
         printf("Cor encontrada na posição %d.\n", found);
     else
         printf("Cor não encontrada.\n");
+
+    return 0;
 }
 

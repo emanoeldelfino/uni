@@ -1,5 +1,5 @@
 /*
-- Escrever um programa que imprima as primerias cinco tabelas de multiplicação:
+Escrever um programa que imprima as primerias cinco tabelas de multiplicação:
 1  2  3  4  5
 2  4  6  8  10
 3  6  9  12 15
@@ -23,5 +23,7 @@ int main(int argc, char *argv[]) {
         printf("\n");
     }
     printf("\n");
+
+    return 0;
 }
 

@@ -14,5 +14,7 @@ int main(int argc, char *argv[]) {
 	printf("\nprintf(num++) -> %d", num++);
 
 	printf("\nprintf(++num) -> %d\n\n", ++num);
+
+    return 0;
 }
 

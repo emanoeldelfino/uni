@@ -9,5 +9,7 @@ int main(int argc, char *argv[]) {
     printf("\nBinário: %b", n);
     printf("\nOctal: %o", n);
     printf("\nHexadecimal: %x\n", n);
+
+    return 0;
 }
 

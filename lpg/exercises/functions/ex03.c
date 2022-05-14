@@ -1,5 +1,5 @@
 /*
-- Criar um programa com uma função que calcule a media de um array de numeros. Se estiver vacio deve indicar que o
+Criar um programa com uma função que calcule a média de um array de números. Se estiver vacio deve indicar que o
 resultado é zero.
 */
 

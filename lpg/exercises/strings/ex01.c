@@ -1,5 +1,5 @@
 /*
-- Criar um programa em fazendo uso de programação modular (funções):
+Criar um programa em fazendo uso de programação modular (funções):
 Menu com 4 opções:
 1) Acrescente 10 caracteres da string em s2 à string em s1.
 2) Determine o comprimento da string em s1. Imprima o resultado.
@@ -66,6 +66,7 @@ int main(int argc, char *argv[]) {
 				printf("\nOpcao invalida!\n");
 		}
 	} while (option != 4);
+
 	return 0;
 }
 

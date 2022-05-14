@@ -1,4 +1,4 @@
-/* - Crie um programa que adicione dois numeros com ponteiros. */
+/* Crie um programa que adicione dois números com ponteiros. */
 
 #include <stdio.h>
 
@@ -10,4 +10,7 @@ int main(int argc, char *argv[]) {
 	int sum = *n1Ptr + *n2Ptr;
 	
 	printf("\nA soma de %d e %d eh %d.\n", *n1Ptr, *n2Ptr, sum);
+
+    return 0;
 }
+

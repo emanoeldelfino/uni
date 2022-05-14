@@ -1,5 +1,5 @@
 /*
-- Crie um programa que compare duas strings digitadas pelo usuário. O programa deverá 
+Crie um programa que compare duas strings digitadas pelo usuário. O programa deverá 
 indicar se a primeira string é menor, igual ou maior que a segunda.
 */
 
@@ -27,5 +27,7 @@ int main(int argc, char *argv[]) {
     scanf("%s", str2);
 
     compstrs(str1, str2);
+
+    return 0;
 }
 

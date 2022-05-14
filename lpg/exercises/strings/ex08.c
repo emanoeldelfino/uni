@@ -1,5 +1,5 @@
 /*
-- Crie um programa que receba várias linhas de texto e conte o número total de palavras. 
+Crie um programa que receba várias linhas de texto e conte o número total de palavras. 
 Considere que as palavras estejam separadas por espaços ou caracteres de newline.
 */
 
@@ -19,6 +19,8 @@ int main(int argc, char *argv[]) {
     }
 
     printf("O numero de palavras no texto eh %d.\n", count_words(text));
+
+    return 0;
 }
 
 int count_words(char *str) {

@@ -1,5 +1,5 @@
 /*
-- Crie um programa que receba uma linha de texto no array de char s[100]. Imprima a linha com letras maiúsculas e
+Crie um programa que receba uma linha de texto no array de char s[100]. Imprima a linha com letras maiúsculas e
 minúsculas.
 */
 

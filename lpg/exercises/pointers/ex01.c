@@ -1,4 +1,4 @@
-/* - Crie um programa que permita mostrar a declaração básica do ponteiro. */
+/* Crie um programa que permita mostrar a declaração básica do ponteiro. */
 
 #include <stdio.h>
 
@@ -12,4 +12,7 @@ int main(int argc, char *argv[]) {
 	nPtr = &n;
 
 	printf("%d -> %p\n", n, nPtr);
+
+    return 0;
 }
+

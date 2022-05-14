@@ -30,4 +30,6 @@ int main() {
     } else {
         printf("Triangulo escaleno");
     }
+
+    return 0;
 }

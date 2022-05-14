@@ -1,6 +1,6 @@
 /*
-- Criar um programa com uma função que permita receber um array como 
-parâmetro e devolva uma cópia.
+Criar um programa com uma função que permita receber um array como parâmetro
+e devolva uma cópia.
 */
 
 #include <stdio.h>
@@ -19,6 +19,8 @@ int main(int argc, char *argv[]) {
     for (i = 0; i < MAX; i++) {
         printf("%d -> %d\n", i + 1, copy[i]);
     }
+
+    return 0;
 }
 
 void *copy_arr(int *arr, unsigned int size, int *dest) {

@@ -1,6 +1,6 @@
 /*
-- Criar um programa com uma função que permita realizar todas as operações aritméticas (selecionada pelo usuário). O
-programa somente finaliza quando o usuario desejar.
+Criar um programa com uma função que permita realizar todas as operações aritméticas (selecionada pelo usuário). O
+programa somente finaliza quando o usuário desejar.
 */
 
 #include <stdio.h>

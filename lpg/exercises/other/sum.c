@@ -13,5 +13,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	printf("\n%d\n\n", sum);
+
+    return 0;
 }
 

@@ -1,5 +1,5 @@
 /*
-- Crie um programa que receba quatro strings que representem inteiros, converta as strings em inteiros, some os valores e
+Crie um programa que receba quatro strings que representem inteiros, converta as strings em inteiros, some os valores e
 imprima o total dos quatro valores.
 */
 
