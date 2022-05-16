@@ -9,15 +9,11 @@ $$$$$
 */
 
 #include <stdio.h>
-#include <string.h>
 
 int main(int argc, char *argv[]) {
+    for (int i = 1; i <= 5; i++)
+        printf("*\n%.*s", i, "$$$$$");
     printf("\n");
-    for (int i = 0; i <= 5; i++) {
-        printf("%.*s%c\n", i, "$$$$$", i < 5 ? '*' : ' ');
-    }
-    printf("\n");
-
     return 0;
 }
 
